@@ -1,5 +1,5 @@
 package com.femalehewmon.nagem;
 
-public class NagenApplication {
+public class NagemApplication {
 
 }
