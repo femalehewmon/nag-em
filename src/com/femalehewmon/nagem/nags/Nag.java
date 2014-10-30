@@ -10,12 +10,17 @@ public abstract class Nag {
 	
 	private final Type _nagType;
 	
-	private int _priority;
-	
 	public Nag(Type type)
 	{
 		_nagType = type;
 	}
+	
+	public Type getType()
+	{
+		return _nagType;
+	}
+	
+	protected abstract Boolean conditionMet();
 	
 	protected abstract void destroy();
 	

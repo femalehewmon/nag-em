@@ -1,10 +1,15 @@
 package com.femalehewmon.nagem.nags;
 
 public class EventNag extends Nag{
-
 	
 	public EventNag() {
 		super(Type.EventNag);
+	}
+
+	@Override
+	protected Boolean conditionMet() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
