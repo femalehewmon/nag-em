@@ -6,6 +6,12 @@ import com.femalehewmon.nagem.nags.NagGroup;
 
 public class Loggable {
 
+	// A Loggable will be logged based on user input.
+	// A Loggable will nag a user if any of the assigned NagGroups
+	// have their conditions met (logical OR).
+	// If a Loggable does not have any assigned NagGroups, then
+	// this loggable will not nag the user.
+
 	private String _name;
 	private String _description;
 	
@@ -19,6 +25,11 @@ public class Loggable {
 	public void addNagGroup(NagGroup nagGroup)
 	{
 		_nagSchedule.add(nagGroup);
+	}
+	
+	public void removeNagGroup(NagGroup nagGroup)
+	{
+		_nagSchedule.remove(nagGroup);
 	}
 	
 	protected void destroy()
