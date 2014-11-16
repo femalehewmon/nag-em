@@ -3,6 +3,8 @@
 
     <string name="app_name">Nag\'em</string>
     <string name="hello_world">Hello world!</string>
+
+    <string name="action_about">About Nag\'em</string>
     <string name="action_settings">Settings</string>
 
 </resources>

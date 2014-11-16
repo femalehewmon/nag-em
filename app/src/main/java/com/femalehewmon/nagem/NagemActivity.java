@@ -2,6 +2,9 @@ package com.femalehewmon.nagem;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class NagemActivity extends FragmentActivity {
 
@@ -10,8 +13,8 @@ public class NagemActivity extends FragmentActivity {
 	{
 		super.onCreate(savedInstanceState);
 	}
-	
-	@Override
+
+    @Override
 	protected void onSaveInstanceState(Bundle outState)
 	{
 		super.onSaveInstanceState(outState);
@@ -22,5 +25,27 @@ public class NagemActivity extends FragmentActivity {
 	{
 		super.onDestroy();
 	}
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.nagem, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch(item.getItemId())
+        {
+            case R.id.action_about:
+                return true;
+            case R.id.action_settings:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 	
 }
