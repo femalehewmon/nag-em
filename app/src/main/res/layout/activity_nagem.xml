@@ -9,8 +9,16 @@
     tools:context="com.femalehewmon.nagem.ui.NagemActivity" >
 
     <TextView
+        android:id="@+id/temp_string"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+
+    <fragment android:name="com.femalehewmon.nagem.ui.fragments.ViewLoggablesFragment"
+        android:id="@+id/view_loggables_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/temp_string"
+        tools:layout="@layout/fragment_view_loggables" />
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.femalehewmon.nagem.ui;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -7,13 +8,18 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.femalehewmon.nagem.R;
+import com.femalehewmon.nagem.ui.fragments.ViewLoggablesFragment;
 
-public class NagemActivity extends FragmentActivity {
+public class NagemActivity extends FragmentActivity
+        implements ViewLoggablesFragment.OnFragmentInteractionListener{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
-		super.onCreate(savedInstanceState);
+        // Inflate the layout
+        setContentView(R.layout.activity_nagem);
+
+        super.onCreate(savedInstanceState);
 	}
 
     @Override
@@ -49,5 +55,9 @@ public class NagemActivity extends FragmentActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-	
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }
