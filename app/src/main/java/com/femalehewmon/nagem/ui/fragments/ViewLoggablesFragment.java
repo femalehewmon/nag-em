@@ -1,4 +1,4 @@
-package com.femalehewmon.nagem.ui;
+package com.femalehewmon.nagem.ui.fragments;
 
 import android.app.Activity;
 import android.net.Uri;

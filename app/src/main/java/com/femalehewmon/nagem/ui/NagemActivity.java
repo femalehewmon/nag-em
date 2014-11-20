@@ -1,10 +1,12 @@
-package com.femalehewmon.nagem;
+package com.femalehewmon.nagem.ui;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import com.femalehewmon.nagem.R;
 
 public class NagemActivity extends FragmentActivity {
 
